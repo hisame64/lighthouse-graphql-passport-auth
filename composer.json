@@ -1,6 +1,6 @@
 {
-    "name": "joselfonseca/lighthouse-graphql-passport-auth",
-    "description": "Add GraphQL types and mutations for login and recover password functionalities",
+    "name": "hisame64/lighthouse-graphql-passport-auth",
+    "description": "Add GraphQL types and mutations for login and recover password functionalities (fork from joselfonseca/lighthouse-graphql-passport-auth)",
     "keywords": [
         "laravel",
         "GraphQL",
@@ -11,8 +11,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Jose Luis Fonseca",
-            "email": "jose@ditecnologia.com"
+            "name": "momo",
+            "email": "hisame64@users.noreply.github.com"
         }
     ],
     "require": {
