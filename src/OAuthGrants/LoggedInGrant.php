@@ -83,7 +83,9 @@ class LoggedInGrant extends AbstractGrant
      */
     protected function getUserEntityByRequest(Request $request)
     {
-        if (is_null($model = config('auth.providers.users.model'))) {
+        $guard = config('auth.default.guard');
+        $provider = config('auth.guards.'.$guard.'.provider');
+        if (is_null($model = config('auth.providers.'.$provider.'.model'))) {
             throw OAuthServerException::serverError('Unable to determine user model from configuration.');
         }
         if (method_exists($model, 'byLoggedInUser')) {
